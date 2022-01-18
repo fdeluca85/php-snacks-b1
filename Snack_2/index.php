@@ -25,7 +25,7 @@ if (isset($_GET['name']) && ($_GET['mail']) && ($_GET['age'])) {
         echo "Accesso negato";
     }
 } else {
-    echo "Dati mancanti  - inserisci nel seguente formato ?name=***&mail=***@***.***&age=***";
+    echo "Dati mancanti  - inseriscili nel seguente formato ?name=***&mail=***@***.***&age=***";
 }
 
 
