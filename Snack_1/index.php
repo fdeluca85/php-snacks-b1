@@ -29,10 +29,19 @@ $match = [
 <h2>Risultati</h2>
 
 <ul>
-    <?php
-    for ($i = 0; $i < count($match); $i++) {
-        echo "<li>" . $match[$i]["squadraCasa"] . " " . " - " . $match[$i]["squadraOspite"] . " " . " | " . $match[$i]["puntiCasa"] . " " . " - " . $match[$i]["puntiOspite"] . "</li>";
-    }
+    <!-- versione 1 -->
+    <!-- <?php
+            for ($i = 0; $i < count($match); $i++) {
+                echo "<li>" . $match[$i]["squadraCasa"] . " " . " - " . $match[$i]["squadraOspite"] . " " . " | " . $match[$i]["puntiCasa"] . " " . " - " . $match[$i]["puntiOspite"] . "</li>";
+            }
+            ?> -->
 
-    ?>
+    <!-- versione 2 -->
+    <?php for ($i = 0; $i < count($match); $i++) { ?>
+        <li>
+            <?php echo $match[$i]["squadraCasa"]; ?> - <?php echo $match[$i]["squadraOspite"]; ?> | <?php echo $match[$i]["puntiCasa"]; ?> - <?php echo $match[$i]["puntiOspite"]; ?>
+
+        </li>
+
+    <?php } ?>
 </ul>
