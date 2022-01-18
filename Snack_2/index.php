@@ -22,10 +22,6 @@ if (strlen($name) >= 3 && strpos($mail, $dot) && strpos($mail, $at) && is_numeri
     echo "Accesso riuscito";
 } else {
     echo "Accesso negato";
-}
-
-
-
 
 
 ?>
